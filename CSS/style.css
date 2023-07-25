@@ -208,8 +208,10 @@ body {
         transform: rotate(0);
     }
   }
-
-  /* header::after{
+header{
+    position: relative;
+}
+header::after{
     content: "";   
     background: linear-gradient(0deg, #020228, transparent);
     height: 250px;  
@@ -217,8 +219,8 @@ body {
     position: absolute;
     bottom: 0;
     
-  } */
+  }
 
-  .content-plans-text{
+.content-plans-text{
     font-size: 32px;
   }
