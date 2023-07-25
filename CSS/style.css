@@ -209,15 +209,15 @@ body {
     }
   }
 
-  header::after{
+  /* header::after{
     content: "";   
     background: linear-gradient(0deg, #020228, transparent);
     height: 250px;  
     width: 100%; 
     position: absolute;
     bottom: 0;
-    border: 1px solid red;
-  }
+    
+  } */
 
   .content-plans-text{
     font-size: 32px;
