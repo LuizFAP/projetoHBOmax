@@ -55,8 +55,8 @@ body {
     color: var(--text-color);
 }
 
-.container-fluid {
-    background-color: var(--primary-color);
+.menu {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,8 +165,7 @@ body {
     font-weight: bold;
 }
 
-.button-center{
-    
+.button-center{   
     
     margin: 0 auto;
 }
@@ -297,13 +296,12 @@ header::after{
 .content-images h3{
     font-size: 2rem;
 }
-.content-images__images{
-    
-}
+
 .images{
-    width: 340px;
-    height: 462px;
-    
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+   
 }
 
 footer{
@@ -338,8 +336,56 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 40px;
+    padding: 24px;
 }
 
+@media screen and (min-width: 800px) {
+   .menu{
+    flex-direction: row;
+    justify-content: space-between;
+    
+   }
+   .menu__button{
+    margin-top: 0;
+   }
+   .content-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:30px;
+    overflow: visible;
+    padding: 0;
+   }
+   .container{
+    padding: 0;
+   }
+   .footer-list{
+    flex-direction: row;
+    justify-content: center;
+   }
+}
 
+@media screen and (min-width: 990px) {
+    .content-images{
+        grid-template-columns: repeat(3, 1fr);        
+        overflow: visible;
+        padding: 0;
+        gap: 24px;
+       }
+   
+}
 
+@media screen and (min-width: 1200px) {
+    .cards{
+        flex-direction: row;
+        gap: 24px;
+    }
+   
+    .card-content__title{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;        
+    }
+   
+    
+}
 
